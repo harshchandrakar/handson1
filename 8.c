@@ -17,22 +17,13 @@ void main() {
         char buffer[BUFFER_SIZE];
         ssize_t bytes_read ;
 
-        if ((bytes_read = read(fd1,buffer,BUFFER_SIZE))>0){
-                
-                if (bytes_read > 0) {
-                        
-                        int fd3 = write(0,buffer,bytes_read);
+       while (read(fd1,buffer,1)){
+	       write(0,buffer,1);
+	       if(buffer[0] == '\n'){
+		       getchar();
+	       }
+       }
 
-                        if (fd3 <0){
-                                perror("file print");
-                        }
-			close(fd3);
-                }
-        }
-
-        if (bytes_read <0 ) {
-                perror("read");
-        }
         close(fd1);
    
 }

@@ -5,17 +5,17 @@
 
 #define BUFFER_SIZE 1024
 
-void main() {
+void main(int argc, char *argv[]) {
 	char *source = "file1.txt";
 	char *dest = "file2.txt";
 
-	int fd1 = open(source,O_RDONLY);
+	int fd1 = open(argv[1],O_RDONLY);
 
 	if (fd1<0){
 		perror("file1: ");
 	}
 
-	int fd2 =open(dest,O_RDWR);
+	int fd2 =open(argv[2],O_RDWR);
 
 	if (fd2<0){
 		perror("file2");
@@ -31,11 +31,6 @@ void main() {
             		if (bytes_written < 0) {
                 		perror("write");
            	 	}
-			int fd3 = write(0,buffer,bytes_read);
-
-			if (fd3 <0){
-				perror("file print");
-			}
 		}
 	}
 
