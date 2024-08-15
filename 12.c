@@ -13,7 +13,20 @@ void main() {
 		perror("fcntl");
 	}
 
-	printf("access mode from fcntl: %d\n" ,status & O_ACCMODE);
-	printf("given access mode on opening: %d\n", O_RDWR);
+	
+	switch (status & O_ACCMODE) {
+		case O_RDONLY:
+			printf("Read only access \n");
+			break;
+		case O_WRONLY:
+			printf("write only access \n");
+			break;
+		case O_RDWR:
+			printf("read and write mode \n");
+			break;
+		default:
+			printf("mode not mentiond \n");
+		}
+	
 
 }
