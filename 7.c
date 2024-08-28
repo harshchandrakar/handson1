@@ -15,7 +15,7 @@ void main(int argc, char *argv[]) {
 		perror("file1: ");
 	}
 
-	int fd2 =open(argv[2],O_RDWR);
+	int fd2 =open(argv[2],O_WRONLY | O_EXCL |O_CREAT ,0600);
 
 	if (fd2<0){
 		perror("file2");
