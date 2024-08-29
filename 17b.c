@@ -23,8 +23,10 @@ int main() {
 	fcntl(fd,F_SETLK,&lock);
 
 	if (0> read(fd,&db,sizeof(db))) perror("error in reading: \n");
+	printf("Ticket number before increment: %d \n", db.ticket_number);
+
 	
-	lseek(fd,-sizeof(db),SEEK_CUR);
+	lseek(fd,-1*sizeof(db),SEEK_CUR);
 
 	db.ticket_number+=1;
 

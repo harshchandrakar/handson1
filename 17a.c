@@ -14,10 +14,8 @@ int main(){
 	if (fd<0) perror("error opening file: \n");
 
 	int ticket;
-	
-	int fd2 = read(0,&ticket,sizeof(ticket));
-
-	if (fd2<0) perror("error reading file: \n") ;
+	printf("enter ticket number :\t");
+	scanf("%d",&ticket);
 
 	db.ticket_number = ticket;
 
