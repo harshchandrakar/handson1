@@ -54,3 +54,11 @@ int main()
 
 	return 0;
 }
+/*
+============================================================================
+Output: select train number(1,2,3):     2
+Entering Read lock... 
+Current ticket number is : 3 
+Press enter to exit lock....
+============================================================================
+*/

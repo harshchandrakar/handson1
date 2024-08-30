@@ -26,3 +26,8 @@ int main()
     ns = (end - start) / 2.9; // found max cpu frequency by lscpu
     printf("execution time for getpid in nano second is: %d  \n", ns);
 }
+/*
+============================================================================
+Output: execution time for getpid in nano second is: 7470 
+============================================================================
+*/

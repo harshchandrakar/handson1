@@ -44,3 +44,8 @@ void main()
 
     close(fd);
 }
+/*
+============================================================================
+Output: write the data string till 10 bytes and then leave space of 10 bytes and again write the data
+============================================================================
+*/

@@ -17,3 +17,11 @@ int main()
     printf("For RR scheduling Maximum priority: %d and Minimum priority: %d  \n", sched_get_priority_max(SCHED_RR), sched_get_priority_min(SCHED_RR));
     return 0;
 }
+/*
+============================================================================
+Output: 
+Realtime scheduling priorities: 
+For FIFO scheduling Maximum priority: 99 and Minimum priority: 1  
+For RR scheduling Maximum priority: 99 and Minimum priority: 1  
+============================================================================
+*/

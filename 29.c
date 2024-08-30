@@ -76,3 +76,17 @@ int main()
     findScheduler(policy);
     return 1;
 }
+/*
+============================================================================
+Output: 
+sudo ./29 
+[sudo] password for harsh: 
+Its Other scheduling 
+Choose a scheduling plan 
+ 1.FIFO 
+ 2.RR  
+ 3.Other 
+2
+Its RR scheduling
+============================================================================
+*/

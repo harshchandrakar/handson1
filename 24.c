@@ -23,10 +23,22 @@ int main()
     }
     else
     {
-        // ps -l to see zombie process
+        // ps -l to see orphan process
         sleep(10);
         printf("inside parent process %d \n", getpid());
         printf("child id is : %d \n", pid);
     }
     return 1;
 }
+/*
+============================================================================
+Output: 
+inside parent process 8551 
+child id is : 8552 
+
+after 40 second:
+inside child process 8552 
+parent process id is : 1715
+
+============================================================================
+*/

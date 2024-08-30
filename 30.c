@@ -33,3 +33,14 @@ int main()
 }
 
 // we can check it using ps -el | grep pid
+/*
+============================================================================
+Output: 
+Chind pid : 9990 
+running daemon process..... 
+Chind pid : 9990 
+running daemon process..... 
+Chind pid : 9990 
+running daemon process..... 
+============================================================================
+*/

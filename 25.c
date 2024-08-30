@@ -22,7 +22,7 @@ int main()
         {
             // executed by child
             pause(); // waiting for signal like kill the process from other terminal using ps aux|grep 25
-            sleep(20);
+            // sleep(20);
         }
         else
         {
@@ -38,3 +38,12 @@ int main()
     printf("exiting child with pid : %d \n", pid[process - 1]);
     return 0;
 }
+/*
+============================================================================
+Output: from parent 8867 and child no: 1 with pid : 8868 
+from parent 8867 and child no: 2 with pid : 8869 
+from parent 8867 and child no: 3 with pid : 8870 
+select which chid process to stop {1,2,3}:      1
+exiting child with pid : 8868 
+============================================================================
+*/

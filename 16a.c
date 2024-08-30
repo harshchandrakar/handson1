@@ -36,3 +36,10 @@ void main(int argv, char *argc[])
 
 	lock.l_type = F_UNLCK;
 }
+/*
+============================================================================
+Output: Entering write lock
+Press enter to Unlock
+Exiting write lock
+============================================================================
+*/

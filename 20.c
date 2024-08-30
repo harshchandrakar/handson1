@@ -30,3 +30,12 @@ int main()
     }
     return 1;
 }
+/*
+============================================================================
+Output: current priority of process is: 0 
+
+ changing priority to 5: 
+
+ new priority of process is: 5
+============================================================================
+*/

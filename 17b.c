@@ -57,3 +57,11 @@ int main()
 
 	return 0;
 }
+/*
+============================================================================
+Output: Entering Write lock... 
+Ticket number before increment: 22 
+Ticket number after increment: 23 
+Press enter to exit lock....
+============================================================================
+*/

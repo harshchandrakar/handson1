@@ -43,3 +43,8 @@ void main()
 	printf("time of last modification: %jd\n", sd.st_mtime);
 	printf("time of last change: %jd\n", sd.st_ctime);
 }
+/*
+============================================================================
+Output: it prints information about file1.txt
+============================================================================
+*/

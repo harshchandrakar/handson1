@@ -37,3 +37,10 @@ void main(int argv, char *argc[])
 
         fcntl(fd, F_SETLK, &lock);
 }
+/*
+============================================================================
+Output: Entering Read lock 
+Press enter to unlock..
+Exiting read lock  ...
+============================================================================
+*/
